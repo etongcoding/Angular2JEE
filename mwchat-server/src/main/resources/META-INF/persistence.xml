@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <!--
+        config ds in wildfly in Configuration: Subsystems    Subsystem: Datasources    Type: Non-XA    Datasource: MWCHATDS
+        Name: MWCHATDS
+        JNDI: java:jboss/datasources/MWCHATDS
+        Connection URL: jdbc:mysql://localhost:3306/mwchatdb
+        Username: etongcoding
+        Password: 3.....8     
+    -->
+  <!--
+        % sudo service mysql start
+        % mysql -u root -p
+        password: *****
+        mysql> create database mwchatdb DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+        mysql> grant all on mwchatdb.* to etongcoding@'%' identified by '3.....8';
+        mysql> grant all on mwchatdb.* to etongcoding@localhost identified by '3.....8';
+        mysql> FLUSH PRIVILEGES;
+        mysql> exit;
+    -->
+  <persistence-unit name="MWCHAT_PU" transaction-type="JTA">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <jta-data-source>java:jboss/datasources/MWCHATDS</jta-data-source>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hbm2ddl.auto" value="create"/>
+    </properties>
+  </persistence-unit>
+  <!--
+    <persistence-unit name="DEFAULT_PU" transaction-type="RESOURCE_LOCAL">
+      <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+      <class>com.etongcoding.mwchat.model.Message</class>
+      <class>com.etongcoding.mwchat.model.Mwchatuser</class>
+      <class>com.etongcoding.mwchat.model.Friend</class>
+      <exclude-unlisted-classes>false</exclude-unlisted-classes>
+      <properties>
+        <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
+        <property name="javax.persistence.jdbc.password" value="app"/>
+        <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+        <property name="javax.persistence.jdbc.user" value="app"/>
+        <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      </properties>
+    </persistence-unit>-->
+</persistence>

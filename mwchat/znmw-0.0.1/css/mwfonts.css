@@ -1,0 +1,202 @@
+/*18 font family begin*/
+@font-face {
+    font-family: ZnMWBAT;
+    src: url('../fonts/ZnMWBAT.woff');
+}
+
+@font-face {
+    font-family: ZnMWBST;
+    src: url('../fonts/ZnMWBST.woff');
+}
+
+@font-face {
+    font-family: ZnMWHWT;
+    src: url('../fonts/ZnMWHWT.woff');
+}
+
+@font-face {
+    font-family: ZnMWNT;
+    src: url('../fonts/ZnMWNT.woff');
+}
+
+@font-face {
+    font-family: ZnMWSHH;
+    src: url('../fonts/ZnMWSHH.woff');
+}
+
+@font-face {
+    font-family: ZnMWTZT;
+    src: url('../fonts/ZnMWTZT.woff');
+}
+
+@font-face {
+    font-family: ZnMWBIT;
+    src: url('../fonts/ZnMWBIT.woff');
+}
+
+@font-face {
+    font-family: ZnMWCHT;
+    src: url('../fonts/ZnMWCHT.woff');
+}
+
+@font-face {
+    font-family: ZnMWJT;
+    src: url('../fonts/ZnMWJT.woff');
+}
+
+@font-face {
+    font-family: ZnMWSGT;
+    src: url('../fonts/ZnMWSGT.woff');
+}
+
+@font-face {
+    font-family: ZnMWSHR;
+    src: url('../fonts/ZnMWSHR.woff');
+}
+
+@font-face {
+    font-family: ZnMWXW;
+    src: url('../fonts/ZnMWXW.woff');
+}
+
+@font-face {
+    font-family: ZnMWBKT;
+    src: url('../fonts/ZnMWBKT.woff');
+}
+
+@font-face {
+    font-family: ZnMWHT;
+    src: url('../fonts/ZnMWHT.woff');
+}
+
+@font-face {
+    font-family: ZnMWMHT;
+    src: url('../fonts/ZnMWMHT.woff');
+}
+
+@font-face {
+    font-family: ZnMWSG;
+    src: url('../fonts/ZnMWSG.woff');
+}
+
+@font-face {
+    font-family: ZnMWTZBT;
+    src: url('../fonts/ZnMWTZBT.woff');
+}
+
+@font-face {
+    font-family: ZnMWYST;
+    src: url('../fonts/ZnMWYST.woff');
+}
+
+/*18 end*/
+
+/*18 mw font start*/
+.MWBAT {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWBAT;
+}
+
+.MWBST {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWBST;
+}
+
+.MWHWT {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWHWT;
+}
+
+.MWNT {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWNT;
+}
+
+.MWSHH {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWSHH;
+}
+
+.MWTZT {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWTZT;
+}
+
+.MWBIT {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWBIT;
+}
+
+.MWCHT {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWCHT;
+}
+
+.MWJT {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWJT;
+}
+
+.MWSGT {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWSGT;
+}
+
+.MWSHR {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWSHR;
+}
+
+.MWXW {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWXW;
+}
+
+.MWBKT {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWBKT;
+}
+
+.MWHT {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWHT;
+}
+
+.MWMHT {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWMHT;
+}
+
+.MWSG {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWSG;
+}
+
+.MWTZBT {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWTZBT;
+}
+
+.MWYST {
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-lr;
+     font-family: ZnMWYST;
+}
+/*18 mw font end*/

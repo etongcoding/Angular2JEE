@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" pkg="com.etongcoding.mwchat.model" v="2.6.3" sm="false" xs="false" id="_14772603818211" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity lbl-ref="_14772604235962" xre="false" compositePrimaryKeyClass="MwchatuserPK" abs="false" class="Mwchatuser" visibile="true" minimized="false" rootElement="_14772603818211" id="_1477260423545">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic attribute-type="java.util.Date" visibile="true" name="dlc" id="_14772606055074">
+                <jpa:bv>
+                    <jpa:nn/>
+                </jpa:bv>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+                <jpa:column name="DLC" unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="Long" visibile="true" name="operatorId" id="_14772606109705">
+                <jpa:bv>
+                    <jpa:nn/>
+                </jpa:bv>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" visibile="true" name="createDate" id="_14772606388026">
+                <jpa:bv>
+                    <jpa:nn/>
+                </jpa:bv>
+                <jpa:temporal>DATE</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" visibile="true" name="emailAddress" id="_14772606392817">
+                <jpa:bv/>
+                <jpa:column unique="true" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" visibile="true" name="displayName" id="_14772606397618">
+                <jpa:bv/>
+                <jpa:column unique="false" nullable="false" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" visibile="true" name="logoFileName" id="_14772606402029">
+                <jpa:bv/>
+                <jpa:column unique="false" nullable="false" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" visibile="true" name="password" id="_147726064063310">
+                <jpa:bv/>
+                <jpa:column unique="false" nullable="false" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:one-to-many orp="false" collection-type="java.util.List" connected-entity-id="_1477262534157" connected-attribute-id="_1477680192179259" visibile="true" name="messages" id="_1477680192180260"/>
+            <jpa:one-to-many orp="false" collection-type="java.util.List" connected-entity-id="_1477262522088" connected-attribute-id="_1477680476538369" visibile="true" name="friends" id="_1477680476539370"/>
+            <jpa:id attribute-type="Long" visibile="true" name="id" id="_14772604235962">
+                <jpa:bv/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Mwchatuser.findAll">
+            <jpa:query>Select e from Mwchatuser e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Mwchatuser.findByDlc">
+            <jpa:query>Select u from Mwchatuser u where u.dlc=:dlc</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Mwchatuser.findByOperatorId">
+            <jpa:query>Select u from Mwchatuser u where u.operatorId=:operatorId</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Mwchatuser.findByCreateDate">
+            <jpa:query>Select u from Mwchatuser u where u.createDate=:createDate</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Mwchatuser.findByEmailAddress">
+            <jpa:query>Select u from Mwchatuser u where u.emailAddress=:emailAddress</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Mwchatuser.findByDisplayName">
+            <jpa:query>Select u from Mwchatuser u where u.displayName=:displayName</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Mwchatuser.findByLogoFileName">
+            <jpa:query>Select u from Mwchatuser u where u.logoFileName=:logoFileName</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Mwchatuser.findByPassword">
+            <jpa:query>Select u from Mwchatuser u where u.password=:password</jpa:query>
+        </jpa:nq>
+        <jpa:table name="MWCHAT_USER"/>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="FriendPK" abs="false" class="Friend" visibile="true" minimized="false" rootElement="_14772603818211" id="_1477262522088">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic attribute-type="java.util.Date" visibile="true" name="dlc" id="_147726257219725">
+                <jpa:bv/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic attribute-type="Long" visibile="true" name="operatorId" id="_147726257241326">
+                <jpa:bv/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" visibile="true" name="createDate" id="_147726257263827">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+            </jpa:basic>
+            <jpa:many-to-one optional="true" primaryKey="false" connected-entity-id="_1477260423545" connected-attribute-id="_1477680476539370" visibile="true" name="mwchatuser" id="_1477680476538369">
+                <jpa:join-column name="MWCHATUSERID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:one-to-one own="true" orp="false" optional="true" primaryKey="false" connected-entity-id="_1477260423545" visibile="true" name="mwchatFriend" id="_1477680627194401">
+                <jpa:join-column name="MWCHATFRIENDID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:one-to-one>
+            <jpa:id attribute-type="Long" visibile="true" name="id" id="_147726252208921">
+                <jpa:bv/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Friend.findAll">
+            <jpa:query>Select e from Friend e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Friend.findByDlc">
+            <jpa:query>Select f from Friend f where f.dlc=:dlc</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Friend.findByOperatorId">
+            <jpa:query>Select f from Friend f where f.operatorId=:operatorId</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Friend.findByCreateDate">
+            <jpa:query>Select f from Friend f where f.createDate=:createDate</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Friend.findByUserId">
+            <jpa:query>Select f from Friend f where f.userId=:userId</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Friend.findByFriendId">
+            <jpa:query>Select f from Friend f where f.friendId=:friendId</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:entity xre="false" compositePrimaryKeyClass="MessagePK" abs="false" class="Message" visibile="true" minimized="false" rootElement="_14772603818211" id="_1477262534157">
+        <jpa:ts e="true"/>
+        <jpa:hc e="true"/>
+        <jpa:eq e="true"/>
+        <jpa:attributes>
+            <jpa:basic attribute-type="java.util.Date" visibile="true" name="dlc" id="_147726258967730">
+                <jpa:bv/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic attribute-type="Long" visibile="true" name="OperatorId" id="_147726258990131">
+                <jpa:bv/>
+            </jpa:basic>
+            <jpa:basic attribute-type="java.util.Date" visibile="true" name="createDate" id="_147726259013332">
+                <jpa:bv/>
+                <jpa:temporal>DATE</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" visibile="true" name="message" id="_147726259062935">
+                <jpa:bv/>
+            </jpa:basic>
+            <jpa:many-to-one optional="true" primaryKey="false" connected-entity-id="_1477260423545" connected-attribute-id="_1477680192180260" visibile="true" name="fromMwchatuser" id="_1477680192179259">
+                <jpa:join-column name="FROMMWCHATUSERID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:many-to-one>
+            <jpa:one-to-one own="true" orp="false" optional="true" primaryKey="false" connected-entity-id="_1477260423545" visibile="true" name="toMwchatuser" id="_1477680398488341">
+                <jpa:join-column name="TOMWCHATUSERID" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:one-to-one>
+            <jpa:id attribute-type="Long" visibile="true" name="id" id="_147726253415823">
+                <jpa:bv/>
+                <jpa:generated-value strategy="AUTO"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Message.findAll">
+            <jpa:query>Select e from Message e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Message.findByDlc">
+            <jpa:query>Select m from Message m where m.dlc=:dlc</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Message.findByOperatorId">
+            <jpa:query>Select m from Message m where m.OperatorId=:OperatorId</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Message.findByCreateDate">
+            <jpa:query>Select m from Message m where m.createDate=:createDate</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Message.findByFromUser">
+            <jpa:query>Select m from Message m where m.fromUser=:fromUser</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Message.findByToUserId">
+            <jpa:query>Select m from Message m where m.toUserId=:toUserId</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Message.findByMessage">
+            <jpa:query>Select m from Message m where m.Message=:Message</jpa:query>
+        </jpa:nq>
+        <jpa:table name="MESSAGE"/>
+    </jpa:entity>
+    <jpa:snp e="true" loc="BEFORE_PACKAGE">/**
+ * This file was generated by the JPA Modeler
+ */</jpa:snp>
+    <jpa:c>
+        <ct>java.util.List</ct>
+        <ct>java.util.Set</ct>
+        <ct>java.util.Map</ct>
+        <ct>java.util.Collection</ct>
+    </jpa:c>
+    <jpa:diagram>
+        <plane elementRef="_14772603818211">
+            <shape elementRef="_1477260423545">
+                <Bounds x="108.0" y="61.0" width="183.0" height="258.0"/>
+            </shape>
+            <shape elementRef="_1477262522088">
+                <Bounds x="487.0" y="249.0" width="144.0" height="178.0"/>
+            </shape>
+            <shape elementRef="_1477262534157">
+                <Bounds x="487.0" y="29.0" width="160.0" height="198.0"/>
+            </shape>
+        </plane>
+    </jpa:diagram>
+</jpa:entity-mappings>
