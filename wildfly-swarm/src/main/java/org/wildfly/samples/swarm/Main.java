@@ -115,7 +115,7 @@ public class Main {
                     ds.driverName("com.mysql");
                     ds.connectionUrl("jdbc:mysql://localhost:3306/mwchatdb");
                     ds.userName("etongcoding");
-                    ds.password(".......");
+                    ds.password("......");
                 });
     }
 
