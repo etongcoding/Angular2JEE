@@ -127,6 +127,7 @@
         <jpa:nq e="false" name="Friend.findByFriendId">
             <jpa:query>Select f from Friend f where f.friendId=:friendId</jpa:query>
         </jpa:nq>
+        <jpa:table name="FRIEND"/>
     </jpa:entity>
     <jpa:entity xre="false" compositePrimaryKeyClass="MessagePK" abs="false" class="Message" visibile="true" minimized="false" rootElement="_14772603818211" id="_1477262534157">
         <jpa:ts e="true"/>
